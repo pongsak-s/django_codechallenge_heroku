@@ -1,1 +1,1 @@
-web: gunicorn cryptic-sands-22147.wsgi
+web: gunicorn django-main-app.wsgi

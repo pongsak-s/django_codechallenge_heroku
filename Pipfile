@@ -8,6 +8,9 @@ django = "===3.0.4"
 djangorestframework = "==3.11"
 psycopg2 = "==2.8.6"
 drf-nested-routers = "0.93.4"
+gunicorn = "*"
+whitenoise = "*"
+dj-database-url = "*"
 
 [dev-packages]
 
