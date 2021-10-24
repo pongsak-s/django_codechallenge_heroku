@@ -1,0 +1,1 @@
+web: gunicorn cryptic-sands-22147.wsgi
