@@ -72,7 +72,9 @@ class Student(models.Model):
     studentid=models.CharField(primary_key=True, max_length=20, unique=True, default=unique_rand, editable=False)
     created = models.DateField(auto_now_add=True)
     school = models.ForeignKey(School, on_delete=models.CASCADE, validators=[is_not_reach_max_students])
-
+    age = models.PositiveSmallIntegerField(default=0)
+    nationality = models.CharField(default="Thai", max_length=20)
+    
     def __str__(self):
         return self.firstname+" "+self.lastname
 
